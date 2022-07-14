@@ -1,0 +1,9 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Geometry
+/Geometry/bin/Debug/net6.0
+/Geometry/obj/Debug/net6.0
+/Geometry.Tests/bin/Debug/net6.0
+/Geometry.Tests/obj/Debug/net6.0
