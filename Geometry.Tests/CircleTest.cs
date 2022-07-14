@@ -1,3 +1,4 @@
+using Geometry.Figures;
 using System;
 using Xunit;
 
@@ -94,7 +95,7 @@ namespace Geometry.Tests
             double radius = 3.5;
             Circle circle = new(name, radius);
 
-            Assert.Equal(38.48, circle.Square());
+            Assert.Equal(38.48, circle.CalcSquare());
         }
         /// <summary>
         /// Тест вычисления площади окружности с точностью 5 знаков
@@ -106,7 +107,7 @@ namespace Geometry.Tests
             double radius = 13.2;
             Circle circle = new(name, radius);
 
-            Assert.Equal(547.3911, circle.Square(5));
+            Assert.Equal(547.3911, circle.CalcSquare(5));
         }
     }
 }

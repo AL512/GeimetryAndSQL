@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Geometry.Figures;
+using System;
 using Xunit;
 
 namespace Geometry.Tests
@@ -229,7 +230,7 @@ namespace Geometry.Tests
 
             Triangle triangle = new(name, a, b, c);
 
-            Assert.Equal(98.76, triangle.Square());
+            Assert.Equal(98.76, triangle.CalcSquare());
         }
         /// <summary>
         /// Тест вычисления площади треугольника с точностью 9 знаков
@@ -244,7 +245,7 @@ namespace Geometry.Tests
 
             Triangle triangle = new(name, a, b, c);
 
-            Assert.Equal(94.99177596, triangle.Square(9));
+            Assert.Equal(94.99177596, triangle.CalcSquare(9));
         }
         /// <summary>
         /// Тест вычисления площади треугольника
@@ -260,7 +261,7 @@ namespace Geometry.Tests
 
             Triangle triangle = new(name, a, b, c);
 
-            Assert.Throws<Exception>(() => triangle.Square());
+            Assert.Throws<Exception>(() => triangle.CalcSquare());
         }
     }
 }
