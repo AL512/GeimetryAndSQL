@@ -89,7 +89,7 @@ namespace Geometry.Tests
         /// Тест вычисления площади окружности по умолчанию
         /// </summary>
         [Fact]
-        public void SquareTest()
+        public void CalcSquareTest()
         {
             string name = "Circle 1";
             double radius = 3.5;
@@ -101,7 +101,7 @@ namespace Geometry.Tests
         /// Тест вычисления площади окружности с точностью 5 знаков
         /// </summary>
         [Fact]
-        public void SquareDigits5Test()
+        public void CalcSquareDigits5Test()
         {
             string name = "Circle 1";
             double radius = 13.2;

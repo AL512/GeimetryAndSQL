@@ -221,7 +221,7 @@ namespace Geometry.Tests
         /// Тест вычисления площади треугольника
         /// </summary>
         [Fact]
-        public void SquareTest()
+        public void CalcSquareTest()
         {
             string name = "Triangle 1";
             double a = 10.0;
@@ -236,7 +236,7 @@ namespace Geometry.Tests
         /// Тест вычисления площади треугольника с точностью 9 знаков
         /// </summary>
         [Fact]
-        public void SquareDigits9Test()
+        public void CalcSquareDigits9Test()
         {
             string name = "Triangle 1";
             double a = 10;
@@ -252,7 +252,7 @@ namespace Geometry.Tests
         /// с исключением
         /// </summary>
         [Fact]
-        public void SquareExTest()
+        public void CalcSquareExTest()
         {
             string name = "Triangle 1";
             double a = 1.0;

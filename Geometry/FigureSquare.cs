@@ -17,9 +17,19 @@ namespace Geometry
         /// </summary>
         /// <param name="figureSquare">Интерфейс расчета блощади фигуры</param>
         /// <returns>Площадь фигуры</returns>
-        public static double Square(IFigureSquare figureSquare)
+        public static double CalcSquare(IFigureSquare figureSquare)
         {
             return figureSquare.CalcSquare();
+        }
+        /// <summary>
+        /// Расчет площади фигуры с заданной точностью
+        /// </summary>
+        /// <param name="figureSquare">Интерфейс расчета блощади фигуры</param>
+        /// <param name="digits">Точность вычисления</param>
+        /// <returns>Площадь фигуры</returns>
+        public static double CalcSquare(IFigureSquare figureSquare, int digits)
+        {
+            return figureSquare.CalcSquare(digits);
         }
     }
 }
